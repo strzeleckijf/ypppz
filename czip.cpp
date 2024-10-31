@@ -31,4 +31,6 @@ int main(){
 	assert(!file.fail());
 
 	assert(eocd.sygnatur == 0x06054b50);
+
+	file.seekg(eocd.offset, ios::beg);
 }
